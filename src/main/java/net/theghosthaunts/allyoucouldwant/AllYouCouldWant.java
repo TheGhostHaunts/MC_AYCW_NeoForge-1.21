@@ -1,5 +1,6 @@
 package net.theghosthaunts.allyoucouldwant;
 
+import net.theghosthaunts.allyoucouldwant.block.ModBlocks;
 import net.theghosthaunts.allyoucouldwant.item.ModItems;
 import org.slf4j.Logger;
 
@@ -39,6 +40,7 @@ public class AllYouCouldWant {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
