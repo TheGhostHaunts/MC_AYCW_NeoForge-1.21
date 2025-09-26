@@ -10,7 +10,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(AllYouCouldWant.MODID);
 
     public static final DeferredItem<Item> ECHOBERRY = ITEMS.register("echoberry",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ECHOBERRY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
